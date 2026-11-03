@@ -30,7 +30,6 @@ cur.close()
 con.close()
 
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         name = request.form['name']
